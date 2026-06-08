@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索影片-精选影视</title>
+  <meta name="description" content="搜索精选影视片库，按标题、简介、标签、年份和地区快速查找热门电影电视剧。">
+  <meta name="keywords" content="精选在线精品亚洲一区二区免费高清影视, 免费追剧热门电影电视剧, 在线免费播放影视全集, 高清无广告影视网站, 最新热门影视资源, 流畅不卡顿观影平台, 在线观看全网影视, 影片搜索">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-shell">
+      <a class="brand" href="./index.html" aria-label="精选影视">
+        <span class="brand-mark">影</span>
+        <span class="brand-text">
+          <strong>精选影视</strong>
+          <small>免费高清影视</small>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类</a>
+        <a href="./rankings.html">排行榜</a>
+          <a href="./category-popular.html">精选推荐</a>
+          <a href="./category-movies.html">电影精选</a>
+          <a href="./category-series.html">剧集热播</a>
+          <a href="./category-suspense.html">悬疑惊悚</a>
+          <a href="./category-comedy.html">喜剧专区</a>
+          <a href="./category-romance.html">爱情故事</a>
+      </div>
+      <form class="nav-search" action="./search.html" method="get" data-search-form>
+        <input type="search" name="q" placeholder="搜索影片、标签、地区" aria-label="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="menu-button" type="button" aria-label="展开导航" data-menu-button>☰</button>
+    </nav>
+    <div class="mobile-panel" data-mobile-panel>
+      <form action="./search.html" method="get" data-search-form>
+        <input type="search" name="q" placeholder="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./rankings.html">排行榜</a>
+        <a href="./category-popular.html">精选推荐</a>
+        <a href="./category-movies.html">电影精选</a>
+        <a href="./category-series.html">剧集热播</a>
+        <a href="./category-suspense.html">悬疑惊悚</a>
+        <a href="./category-comedy.html">喜剧专区</a>
+        <a href="./category-romance.html">爱情故事</a>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero search-hero">
+      <div class="section-shell narrow">
+        <span class="eyebrow light">全站搜索</span>
+        <h1>搜索影片</h1>
+        <form class="large-search" action="./search.html" method="get" data-search-page-form>
+          <input type="search" name="q" placeholder="搜索标题、简介、标签或地区" aria-label="搜索标题、简介、标签或地区" data-search-input>
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </section>
+    <section class="section-shell">
+      <div class="hot-terms">
+        <span>热门标签</span>
+          <button type="button" data-term="恐怖">恐怖</button>
+          <button type="button" data-term="情色">情色</button>
+          <button type="button" data-term="都市传说">都市传说</button>
+          <button type="button" data-term="心理惊悚">心理惊悚</button>
+          <button type="button" data-term="诅咒">诅咒</button>
+          <button type="button" data-term="录像带">录像带</button>
+          <button type="button" data-term="日本">日本</button>
+          <button type="button" data-term="电影">电影</button>
+          <button type="button" data-term="悬疑">悬疑</button>
+          <button type="button" data-term="剧情">剧情</button>
+          <button type="button" data-term="密闭空间">密闭空间</button>
+          <button type="button" data-term="人性拷问">人性拷问</button>
+          <button type="button" data-term="社会隐喻">社会隐喻</button>
+          <button type="button" data-term="中国大陆">中国大陆</button>
+          <button type="button" data-term="科幻喜剧">科幻喜剧</button>
+          <button type="button" data-term="超能力">超能力</button>
+          <button type="button" data-term="反套路">反套路</button>
+          <button type="button" data-term="社畜">社畜</button>
+      </div>
+      <div class="search-summary" data-search-summary></div>
+      <div class="movie-grid" data-search-results></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="./index.html">
+          <span class="brand-mark">影</span>
+          <span>精选影视</span>
+        </a>
+        <p>精选在线精品亚洲一区二区免费高清影视网站，免费在线观看热门电影、电视剧全集，支持高清流畅播放，无广告打扰，让你随时随地轻松追最新影视剧。</p>
+      </div>
+      <div>
+        <h3>频道入口</h3>
+        <a href="./categories.html">全部分类</a>
+        <a href="./rankings.html">热门排行</a>
+        <a href="./search.html">影片搜索</a>
+      </div>
+      <div>
+        <h3>精选分类</h3>
+        <a href="./category-movies.html">电影精选</a>
+        <a href="./category-series.html">剧集热播</a>
+        <a href="./category-suspense.html">悬疑惊悚</a>
+      </div>
+      <div>
+        <h3>观影体验</h3>
+        <p>高清、流畅、响应式布局，电脑与手机均可浏览。</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/app.js"></script>
+  <script src="./assets/search-index.js"></script>
+  <script src="./assets/search.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
